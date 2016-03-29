@@ -32,8 +32,10 @@ Please follow steps below to create a VM from Ravello andinstall dependencies.
         gateway 10.20.0.1
         dns-nameservers 8.8.8.8
     </code></pre>
-5. Reflect updates to Ravello VM on your browser.
-6. Shutdown the VM, publish updates and start the VM again.
+5. Edit /etc/hosts file and add jumphost there.
+    <pre><code>127.0.0.1 jumphost</code></pre>
+6. Reflect updates to Ravello VM on your browser.
+7. Shutdown the VM, publish updates and start the VM again.
 
 Please note that openjdk-7-jre is needed for connecting jumphost to Jenkins as slave and has no relation to OPNFV or Fuel themselves.
 lxde, virt-manager, and htop are not normally needed but used in scope of this exercise to see what is happening. The deployment and testing in OPNFV CI do not require graphical user interface and these packages are not needed.
