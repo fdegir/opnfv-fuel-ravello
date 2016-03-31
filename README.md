@@ -5,7 +5,9 @@
 ## Prepare Jumphost
 
 OPNFV deployments are done on PODs that have 6 nodes. One of these nodes is used as the jumphost where the deployment is initiated.
-Please follow steps below to create a VM from Ravello andinstall dependencies.
+Please follow steps below to create a VM from Ravello and install dependencies.
+
+Please do not shutdown Ravello or Fuel VMs until the installation is fully completed. (verify this by opening the Fuel Web Interface where you will get the details about upon the completion of the installation.)
 
 1. Create a VM with the specs below.
     - VM flavor: Ubuntu Server 14.04.1 with qemu-kvm pre-installed
